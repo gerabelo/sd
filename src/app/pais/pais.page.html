@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-grid no-padding>
+        <ion-row class="title">
+            <ion-col class="left">
+              <ion-button fill="clear" color="white" block (click)="goBack()">
+                <fa-icon [icon]="faChevronCircleLeft" size="2x"></fa-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col >
+                IEC029 2019.1 RESTful API
+            </ion-col>
+            <ion-col class="right">
+              <ion-button fill="clear" color="white" block (click)="goToMapa()">
+                <fa-icon [icon]="faCompass" size="2x"></fa-icon>
+              </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-header>
+<ion-content>
+  <ion-grid *ngIf="pais">
+    <ion-row no-padding>
+      <div class="text">
+        <ion-col>
+          <div class="pais">
+              <ul>
+                <li style="font-size:16pt;">{{pais.name}}</li>
+                <li class="pais-data" style="font-size:13pt;">Capital: {{pais.capital}}</li>
+                <li>&nbsp;</li>
+                <li class="pais-data">População: {{pais.population}}</li>
+                <li *ngIf="pais.gini" class="pais-data">Desigualdade Social (Gini): <b>{{pais.gini}}</b></li>
+                <li>&nbsp;</li>
+                <li *ngIf="pais.languages" class="pais-data">Idiomas:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                    <span *ngFor="let idioma of pais.languages">{{idioma}} </span>  
+                </li>
+              
+                <li>&nbsp;</li>
+                <li class="pais-data">Time zone:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                  <span *ngFor="let tz of pais.timezones">{{tz}} </span>
+                </li>
+                <li>&nbsp;</li>
+                <li *ngIf="pais.borders" class="pais-data">Fronteiras:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                    <span *ngFor="let item of pais.borders">{{item}} </span>  
+                </li>
+                <li>&nbsp;</li>
+                <li *ngIf="pais.currencies" class="pais-data">Moedas:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                    <span *ngFor="let moeda of pais.currencies">{{moeda}} </span>  
+                </li>
+                <li>&nbsp;</li>
+                <li *ngIf="pais.callingCodes" class="pais-data">Códigos DDI:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                    <span *ngFor="let codes of pais.callingCodes">{{codes}} </span>  
+                </li>
+                <li>&nbsp;</li>
+                <li *ngIf="pais.topLevelDomain" class="pais-data">Domínios de Topo na Web:</li>
+                <li class="pais-data" style="padding-left:2em;">
+                    <span *ngFor="let dominio of pais.topLevelDomain">{{dominio}} </span>  
+                </li>
+
+                
+              </ul>
+          </div>
+        </ion-col>
+        <!-- <ion-col>
+          <div class="distance">{{distance}}m</div>
+        </ion-col> -->
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>

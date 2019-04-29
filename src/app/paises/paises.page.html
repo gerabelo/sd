@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-grid no-padding>
+    <ion-row class="title">
+        <ion-col class="left">
+          <ion-button fill="clear" color="white" block (click)="presentPopover($event)">
+            <fa-icon [icon]="faInfoCircle" size="2x"></fa-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+            IEC029 2019.1 RESTful API
+        </ion-col>
+        <ion-col class="right">
+          <ion-button fill="clear" color="white" block (click)="goToMapa()">
+            <fa-icon [icon]="faCompass" size="2x"></fa-icon>
+          </ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+              <ion-item *ngFor="let country of paises; index as i">
+                <button class="button button-full button-light" ion-button (click)="gotoPais(country.name)">
+                  <ion-col>
+                    <div class="icon">
+                      <ion-thumbnail >
+                          <img src="https://countryflags.io/{{country.alpha2Code}}/shiny/64.png">
+                          <!-- <img src="assets/flags/{{country.alpha2Code}}.PNG"> -->
+                        </ion-thumbnail>
+                      </div>
+                  </ion-col>
+                  <ion-col>
+                    <div class="paises">
+                      <ul>        
+                        <li class="paises-name">{{country.name}}</li>
+                        <li class="paises-capital">{{country.capital}}</li>
+                        <!-- <li class="pontoId">{{pt.id}}</li> -->
+                      </ul>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <!-- <div class="distance">
+                      {{distances[i]}}m
+                    </div> -->
+                </ion-col>
+                </button>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  
+</ion-content>

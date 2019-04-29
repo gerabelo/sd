@@ -1,0 +1,2 @@
+[0212/091736.138:ERROR:file_io.cc(134)] WriteFile: O pipe está sendo fechado. (0xE8)
+[0308/123335.120:ERROR:crash_report_database_win.cc(476)] failed to truncate: A operação solicitada não pode ser executada em um arquivo com uma seção mapeada pelo usuário aberta. (0x4C8)

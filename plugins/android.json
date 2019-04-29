@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-nativegeocoder": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.br.cidadecoletiva.cajuideas"
+    }
+  },
+  "dependent_plugins": {}
+}
