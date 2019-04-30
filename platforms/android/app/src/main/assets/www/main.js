@@ -908,7 +908,7 @@ var routes = [
         loadChildren: './mapa/mapa.module#MapaPageModule'
     },
     {
-        path: 'pais/:name',
+        path: 'pais/:alpha2Code',
         loadChildren: './pais/pais.module#PaisPageModule'
     },
     {

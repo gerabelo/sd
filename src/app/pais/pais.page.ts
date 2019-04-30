@@ -136,8 +136,8 @@ export class PaisPage implements OnInit {
   /***/
   setPais() {
     this.paises.forEach(pais => {
-      let pais_ = this.activatedRoute.snapshot.paramMap.get('name')
-      if (pais.name == pais_) {
+      let pais_ = this.activatedRoute.snapshot.paramMap.get('alpha2Code')
+      if (pais.alpha2Code == pais_) {
         this.pais = pais;
         console.log('matched: '+this.pais.name);
       }

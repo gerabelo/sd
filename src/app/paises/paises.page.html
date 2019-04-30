@@ -23,13 +23,12 @@
       <ion-row>
         <ion-col>
           <ion-list>
-              <ion-item *ngFor="let country of paises; index as i">
-                <button class="button button-full button-light" ion-button (click)="gotoPais(country.name)">
+              <ion-item *ngFor="let country of paises">
+                <button class="button button-full button-light" ion-button (click)="gotoPais(country.alpha2Code)">
                   <ion-col>
                     <div class="icon">
                       <ion-thumbnail >
                           <img src="https://countryflags.io/{{country.alpha2Code}}/shiny/64.png">
-                          <!-- <img src="assets/flags/{{country.alpha2Code}}.PNG"> -->
                         </ion-thumbnail>
                       </div>
                   </ion-col>

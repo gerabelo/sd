@@ -17,7 +17,7 @@ export class Pais {
   public area: number;
   public gini: number;
   public timezones: string[];
-  public borders:[];
+  public borders: string[];
   public nativeName: string[];
   public numericCode: string;
   public currencies: string[];

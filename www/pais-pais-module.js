@@ -259,8 +259,8 @@ var PaisPage = /** @class */ (function () {
     PaisPage.prototype.setPais = function () {
         var _this = this;
         this.paises.forEach(function (pais) {
-            var pais_ = _this.activatedRoute.snapshot.paramMap.get('name');
-            if (pais.name == pais_) {
+            var pais_ = _this.activatedRoute.snapshot.paramMap.get('alpha2Code');
+            if (pais.alpha2Code == pais_) {
                 _this.pais = pais;
                 console.log('matched: ' + _this.pais.name);
             }
